@@ -93,6 +93,7 @@ Durante a Análise Exploratória, descobrimos padrões cruciais sobre a evasão:
 * Criar uma API para colocar o modelo de predição em produção.
 
 
+---
 
 ## Autor:
 ### Mateus Rodrigues de Oliveira ​🦖​
@@ -105,7 +106,9 @@ A todas as bibliotecas e ferramentas de código aberto que tornaram esta anális
 <p align="center">
   <img src="meu gif do projeto.gif" width="800">
 </p>
+
 ---
+
 *Desenvolvido com dedicação durante o desafio de Análise de Dados. ❤️*
 
 
