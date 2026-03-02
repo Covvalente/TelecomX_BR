@@ -1,73 +1,105 @@
-# 📊 Análise de Churn em Empresa de Telecomunicações
 
-## Descrição do Projeto
-Este projeto consiste em uma análise detalhada dos fatores que influenciam a evasão de clientes (também conhecida como Churn) em uma empresa de telecomunicações. O objetivo principal é identificar padrões e características que diferenciam os clientes que permanecem fiéis dos que optam por cancelar seus serviços. Através da exploração, limpeza e tratamento de dados, bem como da aplicação de técnicas de visualização, buscamos fornecer insights acionáveis para o desenvolvimento de estratégias de retenção eficazes.
+# 📊 Análise de Evasão de Clientes (Customer Churn)
 
-## Problema de Negócio
-O churn de clientes representa um desafio significativo para empresas de telecomunicações. A perda constante de clientes impacta diretamente a receita, a base de usuários e a competitividade no mercado. A compreensão dos motivos que levam os clientes a evadir é crucial para que a empresa possa intervir proativamente, otimizando a experiência do cliente e maximizando o valor de vida útil do cliente (CLV - Customer Lifetime Value).
+Neste repositório, apresento um projeto completo de Ciência de Dados focado na análise da evasão de clientes (Churn) de uma empresa fictícia de telecomunicações. O objetivo principal é transformar dados brutos em **insights estratégicos** para a equipe de retenção.
 
-## Dados
-Os dados utilizados neste projeto foram extraídos de uma base de clientes de uma empresa de telecomunicações, em formato JSON. O dataset contém informações detalhadas sobre:
+---
 
-customerID: Identificador único do cliente.
-Churn: Variável alvo, indicando se o cliente evadiu ('Yes' ou 'No').
-customer: Informações demográficas (gênero, idade, parceiro, dependentes, tempo de serviço).
-phone: Detalhes do serviço telefônico (serviço de telefone, múltiplas linhas).
-internet: Detalhes do serviço de internet (tipo de serviço, segurança online, backup online, proteção de aparelho, suporte técnico, streaming de TV, streaming de filmes).
-account: Informações da conta (tipo de contrato, fatura online, método de pagamento, cobrança mensal, cobrança total).
+## 📖 O Problema de Negócio
 
-## Etapas do Projeto
-### 1. Extração de Dados
-Os dados foram carregados diretamente de um repositório GitHub, utilizando pandas.read_json().
+O custo de aquisição de um novo cliente (CAC) é muito maior do que o custo de manter um cliente atual. Nesta empresa, a taxa geral de evasão está na casa dos **27%**. A missão deste projeto é responder: 
+* *Quais perfis de clientes estão cancelando os serviços?*
+* *Quais fatores têm maior correlação com a decisão de cancelamento?*
 
-### 2. Limpeza e Tratamento de Dados
-Expansão de Colunas Aninhadas: As colunas com dados aninhados (dicionários) foram "aplanadas" para converter cada atributo em uma coluna independente.
-Tratamento da Coluna 'Charges': Valores não numéricos foram convertidos para NaN e preenchidos com 0.0, garantindo a integridade dos dados financeiros.
-Criação de Features: Novas features, como CobrancaDiaria e TotalGasto foram criadas para enriquecer a análise.
-Renomeação de Colunas: Colunas foram renomeadas para facilitar a compreensão e padronização (ex: tenure para MesesServico, Churn para Evasao).
-Codificação de Variáveis: Variáveis categóricas binárias foram convertidas para representação numérica (0 e 1) para viabilizar análises quantitativas.
-### 3. Análise Exploratória de Dados (EDA)
-Foram realizadas análises descritivas e visualizações para identificar padrões de churn. As principais observações incluem:
+---
 
-Distribuição Geral do Churn: Identificação da proporção de clientes que evadiram vs. os que permaneceram.
-Análise por Variáveis Categóricas: Exploração da taxa de churn por gênero, tipo de contrato, método de pagamento e tipo de serviço de internet, utilizando gráficos de barras e torta.
-Análise por Variáveis Numéricas: Exame da relação entre churn e tempo de serviço (MesesServico), cobrança mensal (CobrancaMensal) e total gasto (TotalGasto), através de boxplots.
-Análise de Correlação: Utilização de heatmap para visualizar a correlação entre as variáveis numéricas e o churn.
-### 4. Conclusões e Recomendações
-Com base na EDA, foram elaboradas conclusões detalhadas sobre os principais impulsionadores do churn, acompanhadas de recomendações estratégicas e acionáveis, formuladas seguindo os critérios SMART (Specific, Measurable, Achievable, Relevant, Time-bound), para ajudar a empresa a mitigar o problema de evasão.
+## 🛠️ Tecnologias Utilizadas
 
-## Como Executar o Projeto
-Pré-requisitos
-Certifique-se de ter as seguintes bibliotecas Python instaladas:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
-pandas
-matplotlib
-seaborn
-numpy
-Você pode instalá-las usando pip:
+* **Linguagem:** Python 3.x
+* **Manipulação de Dados:** Pandas, NumPy
+* **Visualização de Dados:** Matplotlib, Seaborn
+* **Ambiente de Desenvolvimento:** Google Colab / Jupyter Notebook
 
-pip install pandas matplotlib seaborn numpy
-Passos para Execução
-Clonar o Repositório:
+---
 
-git clone [Link do seu repositório GitHub, se aplicável]
-cd [nome-do-seu-repositorio]
-Abrir no Google Colab ou Ambiente Jupyter:
+## 🚀 Como Executar o Projeto
 
-Faça o upload do arquivo .ipynb para o Google Colab ou abra-o em um ambiente Jupyter (Jupyter Notebook/Lab).
-Executar as Células:
+Siga os passos abaixo para rodar a análise na sua máquina local:
 
-Execute as células do notebook sequencialmente. O notebook está estruturado para carregar, processar, analisar e visualizar os dados em uma ordem lógica.
-Contribuições
-Contribuições são bem-vindas! Se você tiver sugestões de melhoria, novas análises ou correções, sinta-se à vontade para:
+1. **Clone este repositório:**
+   ```bash
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
 
-Fazer um fork do projeto.
-Criar uma nova branch (git checkout -b feature/AmazingFeature).
-Commita suas alterações (git commit -m 'Add some AmazingFeature').
-Fazer um push para a branch (git push origin feature/AmazingFeature).
-Abrir um Pull Request.
-Licença
-Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para detalhes.
+```
+
+2. **Navegue até o diretório do projeto:**
+```bash
+cd NOME_DO_REPOSITORIO
+
+```
+
+
+3. **Instale as dependências necessárias:**
+```bash
+pip install pandas numpy matplotlib seaborn
+
+```
+
+
+4. **Abra o notebook:**
+Inicie o Jupyter Notebook ou importe o arquivo `.ipynb` para o Google Colab e execute as células sequencialmente.
+
+---
+
+## 🔍 Etapas do Projeto
+
+O desenvolvimento foi dividido nas seguintes fases:
+
+1. **Coleta e Limpeza de Dados:** - Tratamento de valores nulos (NaN) e inconsistências.
+* Conversão de tipos de dados (ex: `Charges_Total` de *string* para *float*).
+* Tradução de colunas e registros para o português.
+
+
+2. **Feature Engineering:**
+* Criação da variável `Cobranca_Diaria`.
+* Criação da variável `Total_Servicos` (soma dos serviços adicionais contratados).
+
+
+3. **Análise Exploratória de Dados (EDA):**
+* Geração de gráficos de barras, pizza, densidade (KDE) e boxplots.
+* Construção de painéis para comparar categorias (Gênero, Contrato, etc.) com a variável alvo (`Cancelou`).
+
+
+4. **Análise de Correlação:**
+* Criação de Heatmaps para entender a relação matemática entre tempo de contrato, cobranças e evasão.
+
+
+
+---
+
+## 💡 Principais Insights Extraídos
+
+Durante a Análise Exploratória, descobrimos padrões cruciais sobre a evasão:
+
+* **Fidelidade Contratual:** Clientes com contratos de renovação **Mensal** são os grandes responsáveis pela taxa de evasão. Contratos anuais e bienais têm churn quase nulo.
+* **Período Crítico (Onboarding):** A maior parte dos cancelamentos ocorre nos **primeiros 5 meses** de assinatura. Se o cliente ultrapassa o primeiro ano, a retenção é altíssima.
+* **Serviços Críticos:** Assinantes do serviço de **Fibra Óptica** e usuários que pagam via **Cheque Eletrônico** apresentam taxas de cancelamento desproporcionalmente altas.
+* **Engajamento no Ecossistema:** Comprovamos matematicamente que clientes que contratam pacotes completos (com segurança online, backup, streaming, etc.) têm probabilidade drasticamente menor de cancelar.
+
+---
+
+## 🔮 Próximos Passos (Trabalhos Futuros)
+
+* Implementar a técnica de **One-Hot Encoding** nas variáveis categóricas restantes.
+* Treinar e testar algoritmos de *Machine Learning* (como **Random Forest**, **XGBoost** ou **Regressão Logística**) para prever a probabilidade de um cliente cancelar no próximo mês.
+* Criar uma API para colocar o modelo de predição em produção.
+
+
+*Desenvolvido com dedicação durante o desafio de Análise de Dados.*
+
+
 
 ## Autor:
 ### Mateus Rodrigues de Oliveira
