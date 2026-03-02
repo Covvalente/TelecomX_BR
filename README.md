@@ -106,5 +106,6 @@ A todas as bibliotecas e ferramentas de código aberto que tornaram esta anális
   <img src="meu gif do projeto.gif" width="800">
 </p>
 ---
-*Desenvolvido com dedicação durante o desafio de Análise de Dados.*❤️
+*Desenvolvido com dedicação durante o desafio de Análise de Dados. ❤️*
+
 
