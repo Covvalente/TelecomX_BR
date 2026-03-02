@@ -30,7 +30,7 @@ Siga os passos abaixo para rodar a análise na sua máquina local:
 
 1. **Clone este repositório:**
  
-   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+   git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/Covvalente/TelecomX_BR)
 
 
 2. **Navegue até o diretório do projeto:**
