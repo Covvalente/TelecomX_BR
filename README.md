@@ -96,11 +96,15 @@ Durante a Análise Exploratória, descobrimos padrões cruciais sobre a evasão:
 ---
 
 ## Autor:
-### Mateus Rodrigues de Oliveira ​🦖​
+### Mateus Rodrigues de Oliveira ​🦖
+​
+---
 
 ## Agradecimentos
 Aos dados de exemplo da TelecomX.
 A todas as bibliotecas e ferramentas de código aberto que tornaram esta análise possível. E Alura Oracle One
+
+---
 
 ## GIF do projeto
 <p align="center">
