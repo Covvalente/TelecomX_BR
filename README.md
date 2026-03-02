@@ -29,23 +29,20 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 Siga os passos abaixo para rodar a análise na sua máquina local:
 
 1. **Clone este repositório:**
-   ```bash
+ 
    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
 
-```
 
 2. **Navegue até o diretório do projeto:**
-```bash
+
 cd NOME_DO_REPOSITORIO
 
-```
 
 
 3. **Instale as dependências necessárias:**
-```bash
+
 pip install pandas numpy matplotlib seaborn
 
-```
 
 
 4. **Abra o notebook:**
@@ -76,7 +73,6 @@ O desenvolvimento foi dividido nas seguintes fases:
 * Criação de Heatmaps para entender a relação matemática entre tempo de contrato, cobranças e evasão.
 
 
-
 ---
 
 ## 💡 Principais Insights Extraídos
@@ -100,7 +96,6 @@ Durante a Análise Exploratória, descobrimos padrões cruciais sobre a evasão:
 *Desenvolvido com dedicação durante o desafio de Análise de Dados.*
 
 
-
 ## Autor:
 ### Mateus Rodrigues de Oliveira
 
@@ -110,5 +105,5 @@ A todas as bibliotecas e ferramentas de código aberto que tornaram esta anális
 
 ## GIF do projeto
 <p align="center">
-  <img src="gif_do_projeto.gif" width="800">
+  <img src="meu gif do projeto.gif" width="800">
 </p>
